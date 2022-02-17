@@ -16,4 +16,6 @@ class DataReader:
         test_data = open_json_data()
         self.protocol = test_data["protocol"]
         self.host = test_data["host"]
-        self.uuid = uuid.uuid1()
+        self.q_uuid = uuid.uuid1()
+        self.q_bearer = test_data["authorization"]["bearer"]
+        self.bearer_token = test_data["authorization"]["bearer_token"]
