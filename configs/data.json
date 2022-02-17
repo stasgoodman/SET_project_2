@@ -1,4 +1,8 @@
 {
   "protocol": "https",
-  "host": "httpbin.org"
+  "host": "httpbin.org",
+  "authorization": {
+    "bearer": "bearer",
+    "bearer_token": "fu1"
+  }
 }
